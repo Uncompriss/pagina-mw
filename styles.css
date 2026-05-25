@@ -297,6 +297,51 @@ h3 {
   font-size: 0.9rem;
 }
 
+.hero-bosch-badge {
+  position: absolute;
+  right: clamp(24px, 6vw, 86px);
+  top: clamp(150px, 20vh, 230px);
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  width: min(440px, 36vw);
+  padding: 18px 20px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(16px);
+}
+
+.hero-bosch-badge img {
+  width: 118px;
+  padding: 10px;
+  background: var(--white);
+  border-radius: 6px;
+}
+
+.hero-bosch-badge span,
+.hero-bosch-badge strong {
+  display: block;
+}
+
+.hero-bosch-badge span {
+  margin-bottom: 4px;
+  color: var(--red-500);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero-bosch-badge strong {
+  font-size: clamp(1.05rem, 1.65vw, 1.55rem);
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
 .car-stage {
   position: absolute;
   right: clamp(20px, 6vw, 84px);
@@ -911,6 +956,18 @@ textarea:focus {
   .car-stage {
     opacity: 0.7;
   }
+
+  .hero-bosch-badge {
+    right: 24px;
+    top: auto;
+    bottom: 192px;
+    width: min(380px, calc(100% - 48px));
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .hero-bosch-badge img {
+    width: 96px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -935,6 +992,22 @@ textarea:focus {
 
   .car-stage {
     display: none;
+  }
+
+  .hero-bosch-badge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    z-index: 3;
+    grid-template-columns: 88px minmax(0, 1fr);
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+  }
+
+  .hero-bosch-badge img {
+    width: 88px;
   }
 
   .brand-strip {
