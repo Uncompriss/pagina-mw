@@ -299,26 +299,28 @@ h3 {
 
 .hero-bosch-badge {
   position: absolute;
-  right: clamp(24px, 6vw, 86px);
-  top: clamp(150px, 20vh, 230px);
+  right: clamp(24px, 5vw, 72px);
+  top: clamp(140px, 18vh, 190px);
   z-index: 4;
   display: grid;
-  grid-template-columns: 118px minmax(0, 1fr);
+  grid-template-columns: 58px minmax(0, 1fr);
   align-items: center;
-  gap: 18px;
-  width: min(440px, 36vw);
-  padding: 18px 20px;
+  gap: 12px;
+  width: min(270px, 28vw);
+  padding: 10px 12px;
   color: var(--white);
-  background: rgba(255, 255, 255, 0.13);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(6, 20, 46, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
-  backdrop-filter: blur(16px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
 }
 
 .hero-bosch-badge img {
-  width: 118px;
-  padding: 10px;
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  padding: 6px;
   background: var(--white);
   border-radius: 6px;
 }
@@ -329,16 +331,17 @@ h3 {
 }
 
 .hero-bosch-badge span {
-  margin-bottom: 4px;
-  color: var(--red-500);
-  font-size: 0.78rem;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.68rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .hero-bosch-badge strong {
-  font-size: clamp(1.05rem, 1.65vw, 1.55rem);
-  line-height: 1.12;
+  color: var(--white);
+  font-size: clamp(0.92rem, 1.2vw, 1.12rem);
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -960,13 +963,14 @@ textarea:focus {
   .hero-bosch-badge {
     right: 24px;
     top: auto;
-    bottom: 192px;
-    width: min(380px, calc(100% - 48px));
-    grid-template-columns: 96px minmax(0, 1fr);
+    bottom: 188px;
+    width: min(260px, calc(100% - 48px));
+    grid-template-columns: 54px minmax(0, 1fr);
   }
 
   .hero-bosch-badge img {
-    width: 96px;
+    width: 54px;
+    height: 54px;
   }
 }
 
@@ -1000,14 +1004,15 @@ textarea:focus {
     bottom: auto;
     top: auto;
     z-index: 3;
-    grid-template-columns: 88px minmax(0, 1fr);
-    width: 100%;
-    margin-top: 24px;
-    padding: 14px;
+    grid-template-columns: 52px minmax(0, 1fr);
+    width: min(270px, 100%);
+    margin-top: 20px;
+    padding: 10px 12px;
   }
 
   .hero-bosch-badge img {
-    width: 88px;
+    width: 52px;
+    height: 52px;
   }
 
   .brand-strip {
